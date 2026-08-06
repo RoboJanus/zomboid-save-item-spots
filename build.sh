@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-MOD_ID="savelastposition"
+MOD_ID="saveitemspots"
 VERSION_DIR="42"
 
 # Convert preview SVG to PNG

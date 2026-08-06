@@ -6,7 +6,7 @@
 
 if isClient() then return end
 
-local MODULE_NAME = "SaveLastPosition"
+local MODULE_NAME = "SaveItemSpots"
 
 local function onClientCommand(module, command, player, args)
     if module ~= MODULE_NAME then return end
@@ -35,14 +35,14 @@ local function onClientCommand(module, command, player, args)
         local inventory = player:getInventory()
         local item = inventory:getItemById(itemId)
         if not item then
-            print("[SaveLastPosition] Server: item not found in player inventory, id=" .. tostring(itemId))
+            print("[SaveItemSpots] Server: item not found in player inventory, id=" .. tostring(itemId))
             return
         end
 
         -- Get the target square
         local square = getCell():getGridSquare(sqX, sqY, sqZ)
         if not square then
-            print("[SaveLastPosition] Server: square not found at " .. sqX .. "," .. sqY .. "," .. sqZ)
+            print("[SaveItemSpots] Server: square not found at " .. sqX .. "," .. sqY .. "," .. sqZ)
             return
         end
 
@@ -63,7 +63,7 @@ local function onClientCommand(module, command, player, args)
         inventory:Remove(item)
         sendRemoveItemFromContainer(inventory, item)
 
-        print("[SaveLastPosition] Server: placed item " .. item:getDisplayName() .. " at " .. sqX .. "," .. sqY .. "," .. sqZ)
+        print("[SaveItemSpots] Server: placed item " .. item:getDisplayName() .. " at " .. sqX .. "," .. sqY .. "," .. sqZ)
     end
 end
 

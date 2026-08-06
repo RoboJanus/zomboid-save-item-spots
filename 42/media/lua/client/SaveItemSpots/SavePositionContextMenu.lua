@@ -81,7 +81,7 @@ function SavePositionContextMenu.onFillInventoryMenu(player, context, items)
         end
 
         if #presetOptions > 0 then
-            local showCoords = SandboxVars and SandboxVars.SaveLastPosition and SandboxVars.SaveLastPosition.ShowCoordinates
+            local showCoords = SandboxVars and SandboxVars.SaveItemSpots and SandboxVars.SaveItemSpots.ShowCoordinates
             local categories = SavePositionData.getCategories(playerObj)
 
             -- Group presets by category
@@ -163,7 +163,7 @@ function SavePositionContextMenu.onFillWorldObjectMenu(player, context, worldobj
             for i = 0, allItems:size() - 1 do
                 local item = allItems:get(i)
                 -- Skip containers, optionally skip equipped items
-                local filterEquipped = SandboxVars and SandboxVars.SaveLastPosition and SandboxVars.SaveLastPosition.FilterEquippedItems
+                local filterEquipped = SandboxVars and SandboxVars.SaveItemSpots and SandboxVars.SaveItemSpots.FilterEquippedItems
                 if not instanceof(item, "InventoryContainer") and (not filterEquipped or not item:isEquipped()) then
                     local label = item:getDisplayName()
                     itemSubmenu:addOption(label, item, SavePositionContextMenu.onPlaceAtPosition, player, square, preset)

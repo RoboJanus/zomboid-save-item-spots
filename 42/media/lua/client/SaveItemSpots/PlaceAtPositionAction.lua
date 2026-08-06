@@ -63,7 +63,7 @@ function PlaceAtPositionClientAction:perform()
     self.item:setJobDelta(0.0)
 
     -- Send command to server to perform the actual placement
-    sendClientCommand(self.character, "SaveLastPosition", "placeItem", {
+    sendClientCommand(self.character, "SaveItemSpots", "placeItem", {
         itemId = self.item:getID(),
         sqX = self.sqX,
         sqY = self.sqY,

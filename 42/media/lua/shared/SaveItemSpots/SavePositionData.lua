@@ -11,8 +11,8 @@ local PRESETS_KEY = PREFIX .. "presets"
 
 --- Get the max presets per tile from sandbox options.
 function SavePositionData.getMaxPresets()
-    if SandboxVars and SandboxVars.SaveLastPosition and SandboxVars.SaveLastPosition.MaxPresetsPerTile then
-        return SandboxVars.SaveLastPosition.MaxPresetsPerTile
+    if SandboxVars and SandboxVars.SaveItemSpots and SandboxVars.SaveItemSpots.MaxPresetsPerTile then
+        return SandboxVars.SaveItemSpots.MaxPresetsPerTile
     end
     return 5
 end

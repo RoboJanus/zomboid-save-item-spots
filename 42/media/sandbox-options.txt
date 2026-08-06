@@ -1,22 +1,22 @@
 VERSION = 1,
 
-option SaveLastPosition.MaxPresetsPerTile
+option SaveItemSpots.MaxPresetsPerTile
 {
     type = integer, min = 1, max = 20, default = 5,
-    page = SaveLastPosition,
-    translation = SaveLastPosition_MaxPresetsPerTile,
+    page = SaveItemSpots,
+    translation = SaveItemSpots_MaxPresetsPerTile,
 }
 
-option SaveLastPosition.ShowCoordinates
+option SaveItemSpots.ShowCoordinates
 {
     type = boolean, default = true,
-    page = SaveLastPosition,
-    translation = SaveLastPosition_ShowCoordinates,
+    page = SaveItemSpots,
+    translation = SaveItemSpots_ShowCoordinates,
 }
 
-option SaveLastPosition.FilterEquippedItems
+option SaveItemSpots.FilterEquippedItems
 {
     type = boolean, default = true,
-    page = SaveLastPosition,
-    translation = SaveLastPosition_FilterEquippedItems,
+    page = SaveItemSpots,
+    translation = SaveItemSpots_FilterEquippedItems,
 }
