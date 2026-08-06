@@ -1,0 +1,11 @@
+"workshopitem"
+{
+  "appid" "108600"
+  "publishedfileid" "3778444988"
+  "contentfolder" ""
+  "previewfile" ""
+  "visibility" "0"
+  "title" "Save Item Spots [B42]"
+  "description" ""
+  "changenote" ""
+}
