@@ -1,0 +1,17 @@
+{
+  "build": {
+    "save-position": {
+      "type": "steam_workshop",
+      "build_script": "build.sh",
+      "when_changed": ["42/*", "mod.info", "workshop.txt", "workshop_description.bbcode", "preview.svg", "build.sh"]
+    }
+  },
+  "release": {
+    "save-position": {
+      "type": "steam_workshop",
+      "app_id": "108600",
+      "workshop_file": "workshop.txt",
+      "description_file": "workshop_description.bbcode"
+    }
+  }
+}

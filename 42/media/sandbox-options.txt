@@ -1,0 +1,22 @@
+VERSION = 1,
+
+option SaveLastPosition.MaxPresetsPerTile
+{
+    type = integer, min = 1, max = 20, default = 5,
+    page = SaveLastPosition,
+    translation = SaveLastPosition_MaxPresetsPerTile,
+}
+
+option SaveLastPosition.ShowCoordinates
+{
+    type = boolean, default = true,
+    page = SaveLastPosition,
+    translation = SaveLastPosition_ShowCoordinates,
+}
+
+option SaveLastPosition.FilterEquippedItems
+{
+    type = boolean, default = true,
+    page = SaveLastPosition,
+    translation = SaveLastPosition_FilterEquippedItems,
+}

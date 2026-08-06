@@ -1,0 +1,6 @@
+name=Save Item Spots
+modversion=1.0.0
+id=savelastposition
+description=Save and restore item positions on tiles. Share positions with other players and factions.
+url=https://github.com/RoboJanus/zomboid-save-position
+versionMin=42.0.0

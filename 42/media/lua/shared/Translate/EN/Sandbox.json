@@ -1,0 +1,8 @@
+{
+	"Sandbox_SaveLastPosition_MaxPresetsPerTile": "Max Presets Per Tile",
+	"Sandbox_SaveLastPosition_MaxPresetsPerTile_tooltip": "Maximum number of saved position presets that can be created on a single tile.",
+	"Sandbox_SaveLastPosition_ShowCoordinates": "Show Coordinates in Preset Names",
+	"Sandbox_SaveLastPosition_ShowCoordinates_tooltip": "If enabled, tile coordinates are shown next to preset names in context menus.",
+	"Sandbox_SaveLastPosition_FilterEquippedItems": "Filter Equipped Items",
+	"Sandbox_SaveLastPosition_FilterEquippedItems_tooltip": "If enabled, equipped items will not appear in the 'Place Saved Item' list."
+}

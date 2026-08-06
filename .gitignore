@@ -1,0 +1,8 @@
+content/
+preview.png
+secrets.env
+docker-compose.dev.yml
+tests/KLICKALACK.ini
+tests/KLICKALACK_SandboxVars.lua
+tests/KLICKALACK_spawnpoints.lua
+tests/KLICKALACK_spawnregions.lua

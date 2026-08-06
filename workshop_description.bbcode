@@ -1,0 +1,79 @@
+[h1]Save Item Spots[/h1]
+
+Save 3D Placement for items on tiles, then restore any item to that exact position and rotation later. Share saved positions with other players and factions.
+
+[h2]Features[/h2]
+[list]
+[*] Save the position and rotation of any placed world item as a named preset
+[*] Restore any item from your inventory to a saved position
+[*] Multiple presets per tile (configurable, default 5)
+[*] Multiplayer compatible — position data syncs via tile modData
+[*] Share positions with specific players or entire factions (UNTESTED, MIGHT NOT WORK YET)
+[/list]
+
+[h2]How to Use[/h2]
+
+[h3]Save a Position[/h3]
+[olist]
+[*] Place an item on the ground/surface where you want it
+[*] Adjust its position with the vanilla 3D Placement tool until it looks right
+[*] Right-click the item on the ground inventory panel → [b]Save Position[/b]
+[*] Enter a name for the preset
+[/olist]
+
+[h3]Restore an Item[/h3]
+[b]From inventory:[/b] Right-click an item → [b]Place at Saved Position[/b] → select a preset. Your character walks to the tile and places the item at the saved offsets and rotation.
+
+[b]From tile:[/b] Right-click a tile with saved presets → [b]Place Saved Item[/b] → select a preset → choose an item from your inventory.
+
+[h3]Sharing (Untested — Use at Your Own Risk)[/h3]
+[i]Note: Sharing functionality is included but has not been tested. It may not work correctly yet. Please report any issues on the Workshop page or GitHub.[/i]
+[list]
+[*] Positions are private by default (only the creator can see them)
+[*] Right-click a tile → open "Item Spots" panel → share presets with players or your faction
+[*] Shared players/faction members see the presets in their context menus
+[*] Recipients can [b]Forget[/b] a shared position to hide it from their view
+[/list]
+
+[h2]Configuration[/h2]
+[table]
+[tr][th]Option[/th][th]Default[/th][th]Description[/th][/tr]
+[tr][td]Max Presets Per Tile[/td][td]5[/td][td]Maximum number of saved positions per tile (1-20)[/td][/tr]
+[tr][td]Show Coordinates in Preset Names[/td][td]true[/td][td]Show tile coordinates next to preset names in context menus[/td][/tr]
+[tr][td]Filter Equipped Items[/td][td]true[/td][td]Hide equipped items from the "Place Saved Item" list[/td][/tr]
+[/table]
+
+[h2]Scope & Limitations[/h2]
+[list]
+[*] Works with [b]world inventory items[/b] (items on the ground/surfaces) only
+[*] Does [b]NOT[/b] work with moveables/furniture (shelves, tables, fridges, etc.)
+[*] Items of different sizes may clip slightly when placed at a position saved by a different-sized item
+[*] You cannot create two presets with the same name on the same tile.
+[/list]
+
+[h2]Known Issues[/h2]
+[list]
+[*] Tile weight limit might not enforced properly. More testing needed.
+[/list]
+
+[h2]Compatibility[/h2]
+[list]
+[*] Project Zomboid Build 42.20+
+[*] Multiplayer dedicated servers and singleplayer
+[*] No dependencies
+[*] Does not conflict with other mods
+[/list]
+
+[h2]Source Code[/h2]
+[url=https://github.com/RoboJanus/zomboid-save-position]GitHub[/url]
+
+[h2]License[/h2]
+Copyright (c) 2026 RoboJanus LLC. All rights reserved.
+You may use, copy, and distribute this mod for any purpose, including commercial use, provided that: the copyright notice is included, the mod is not modified, and the mod is not sold as a standalone product.
+
+[h2]Support[/h2]
+Want to say thanks financially? [url=https://klickalack.com/donate]Donate here[/url].
+
+[list]
+[*] Mod ID: savelastposition
+[/list]
